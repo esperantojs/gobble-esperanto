@@ -1,0 +1,15 @@
+{
+  "name": "gobble-esperanto",
+  "description": "Transpile ES6 modules to AMD and CommonJS with gobble and esperanto",
+  "version": "0.1.0",
+  "author": "Rich Harris",
+  "keywords": [
+    "gobble"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "esperanto": "~0.3.0"
+  }
+}
