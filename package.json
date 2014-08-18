@@ -10,6 +10,6 @@
     "index.js"
   ],
   "dependencies": {
-    "esperanto": "~0.3.0"
+    "esperanto": "~0.3.8"
   }
 }
