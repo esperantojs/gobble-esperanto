@@ -21,7 +21,7 @@ module.exports = gobble( 'js' ).map( 'esperanto', options );
 
 The `options` object can have the following properties:
 
-* `type` (string) - 'amd' or 'cjs'. Default to 'amd'
+* `type` (string) - 'amd', 'cjs' or 'umd'. Default to 'amd'
 * `strict` - see the [esperanto documentation](https://github.com/rich-harris/esperanto/wiki/Strict-mode) for more info
 
 
