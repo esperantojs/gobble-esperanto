@@ -22,8 +22,9 @@ module.exports = gobble( 'js' ).map( 'esperanto', options );
 The `options` object can have the following properties:
 
 * `type` (string) - 'amd', 'cjs' or 'umd'. Default to 'amd'
-* `strict` - see the [esperanto documentation](https://github.com/rich-harris/esperanto/wiki/Strict-mode) for more info
-
+* `name` (string) - name to use for UMD exports (required if `type` is `umd`)
+* `strict` (boolean) - whether to use [strict mode](https://github.com/Rich-Harris/esperanto/wiki/Strict-mode)
+* `sourceMap` (`true` or `'inline'`) - whether to create a sourcemap
 
 ## License
 
