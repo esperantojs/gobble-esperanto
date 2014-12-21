@@ -13,6 +13,7 @@ function esperanto ( es6, options ) {
 		throw new Error( 'The gobble-esperanto plugin supports the following types: ' + Object.keys( methods ).join( ', ' ) );
 	}
 
+	// TODO change esperanto, so it doesn't error if this info is absent
 	if ( !!options.sourceMap ) {
 		options.sourceMapSource = this.src;
 		options.sourceMapFile = this.dest;
@@ -22,5 +23,6 @@ function esperanto ( es6, options ) {
 }
 
 esperanto.defaults = {
-	accept: '.js'
+	accept: '.js',
+	sourceMap: true
 };
