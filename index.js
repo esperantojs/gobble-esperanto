@@ -1,5 +1,7 @@
 module.exports = esperanto;
 
+var path = require( 'path' );
+
 var methods = {
 	amd: 'toAmd',
 	cjs: 'toCjs',
@@ -17,6 +19,10 @@ function esperanto ( es6, options ) {
 	if ( !!options.sourceMap ) {
 		options.sourceMapSource = this.src;
 		options.sourceMapFile = this.dest;
+	}
+
+	if ( options.type === 'umd' && !options.name && options.useFilename ) {
+		options.name = path.basename( this.filename, '.js' );
 	}
 
 	return require( 'esperanto' )[ method ]( es6, options );

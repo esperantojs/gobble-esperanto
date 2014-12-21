@@ -23,6 +23,7 @@ The `options` object can have the following properties:
 
 * `type` (string) - 'amd', 'cjs' or 'umd'. Default to 'amd'
 * `name` (string) - name to use for UMD exports (required if `type` is `umd`)
+* `useFilename` (boolean) - if `name` is not supplied for UMD exports and this is true, the UMD name will be set to the filename without the extension
 * `strict` (boolean) - whether to use [strict mode](https://github.com/Rich-Harris/esperanto/wiki/Strict-mode)
 * `sourceMap` (`true` or `'inline'`) - whether to create a sourcemap
 
