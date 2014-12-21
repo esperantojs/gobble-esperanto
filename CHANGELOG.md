@@ -1,5 +1,9 @@
 # changelog
 
+## 0.2.2
+
+* Add `useFilename` option
+
 ## 0.2.1
 
 * Support sourcemaps and UMD exports
