@@ -1,5 +1,9 @@
 # changelog
 
+## 0.3.0
+
+* Update to esperanto 0.7.0
+
 ## 0.2.4
 
 * Update to esperanto 0.6.0
